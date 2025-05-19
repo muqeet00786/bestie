@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For My Bestie 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+      animation: bgAnimation 20s ease infinite;
+    }
+
+    @keyframes bgAnimation {
+      0%, 100% {
+        background-position: left top;
+      }
+      50% {
+        background-position: right bottom;
+      }
+    }
+
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 2rem;
+      box-shadow: 0 0 30px rgba(255, 182, 193, 0.5);
+      text-align: center;
+      max-width: 500px;
+      animation: floatCard 6s ease-in-out infinite;
+    }
+
+    @keyframes floatCard {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      color: #ff69b4;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #555;
+      margin: 1rem 0;
+    }
+
+    .heart {
+      font-size: 3rem;
+      color: #ff1493;
+      animation: heartbeat 1s infinite;
+    }
+
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Hai Bestie 🌼</h1>
+    <div class="heart">❤️</div>
+    <p>This is a tiny lil' website, made with love for you.<br>
+    Even oceans apart, you're always close to my heart 🌊💖</p>
+    <p>Sending you smiles, from wherever I am 😊</p>
+  </div>
+</body>
+</html>
